@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    width: 95%;
 }
 
 .portfolio-item {
@@ -13,7 +14,6 @@
 
     &:hover {
         background: $clr-primary-variant;
-        background : transparent;
     }
 
     h3 {
