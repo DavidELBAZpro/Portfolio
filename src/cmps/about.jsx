@@ -20,19 +20,19 @@ export const About = () => {
             <article className="about-card">
               <FaAward />
               <h5>Experiences</h5>
-              {/* <small>+1 year</small> */}
+              <small>+1 year</small>
             </article>
 
             <article className="about-card">
               <FiUsers />
               <h5>Clients</h5>
-              {/* <small>Hello</small> */}
+              <small className="text-light">Hello</small>
             </article>
 
             <article className="about-card">
               <VscFolderLibrary />
               <h5>Projects</h5>
-              {/* <small>Hello</small> */}
+              <small>Hello</small>
             </article>
           </div>
 
