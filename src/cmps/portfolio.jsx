@@ -1,6 +1,6 @@
-import MelodifyImg from "../assets/imgs/portfolio1.jpg";
-import MelodifyImg2 from "../assets/imgs/portfolio2.jpg";
-import MelodifyImg3 from "../assets/imgs/portfolio3.jpg";
+// import MelodifyImg2 from "../assets/imgs/portfolio2.jpg";
+// import MelodifyImg3 from "../assets/imgs/portfolio3.jpg";
+import { portfolioData } from "../data/portfolio.data";
 
 export const Portfolio = () => {
   return (
@@ -9,20 +9,24 @@ export const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio-container">
-        <article className="portfolio-item">
-          <div className="portfolio-item-image">
-            <img src={MelodifyImg} alt="Melodify" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio-item-cta">
-            <a href="" className="btn" target="_blank">
-              Github
-            </a>
-            <a href="" className="btn btn-primary" target="_blank">
-              Live Demo
-            </a>
-          </div>
-        </article>
+        {portfolioData.map(({ id, image, title, githubUrl, demoUrl }) => {
+          return (
+            <article key={id} className="portfolio-item">
+              <div  className="portfolio-item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio-item-cta">
+                <a href={githubUrl} className="btn" target="_blank">
+                  Github
+                </a>
+                <a href={demoUrl} className="btn btn-primary" target="_blank">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

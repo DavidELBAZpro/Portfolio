@@ -1,9 +1,9 @@
 
 
 
-export const Testimonials = () => { 
+// export const Testimonials = () => { 
 
-    return (
-        <section id="testimonials">Testimonials</section>
-    )
-}
+//     return (
+//         <section id="testimonials">Testimonials</section>
+//     )
+// }

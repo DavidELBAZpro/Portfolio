@@ -37,7 +37,8 @@
   background: $clr-bg-variant;
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  min-width: 2.5rem;
   text-align: center;
   transition: $main-transition;
 }
