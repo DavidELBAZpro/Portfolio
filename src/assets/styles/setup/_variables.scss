@@ -1,0 +1,53 @@
+// COLOR PALETTE
+$clr-bg: #1f1f38;
+$clr-bg-variant: #2c2c6c;
+$clr-primary: #4db5ff;
+$clr-bg-primary-variant: rgba(77, 181, 255, 0.4);
+$clr-bg-white: #FFF;
+$clr-light: rgba(255, 255, 255, 0.6);
+
+// CONTAINER SIZES
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-sm: 640px;
+$break-md: 810px;
+$break-lg: 1040px;
+$break-xl: 1330px;
+
+// TRANSITION
+
+$main-transition : all 400ms ease;
+
+
+// MEDIA QUERIES
+
+@mixin for-mobile-layout {
+    @media (max-width: $break-sm) {
+      @content;
+    }
+  }
+  
+  @mixin for-small-layout {
+    @media (min-width: $break-sm) {
+      @content;
+    }
+  }
+  
+  @mixin for-medium-layout {
+    @media (min-width: $break-md) {
+      @content;
+    }
+  }
+  
+  @mixin for-large-layout {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  }
+
