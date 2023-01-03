@@ -20,21 +20,31 @@ export const About = () => {
             <article className="about-card">
               <FaAward />
               <h5>Experiences</h5>
-              <small>Hello</small>
+              {/* <small>+1 year</small> */}
             </article>
 
             <article className="about-card">
               <FiUsers />
-              <h5>Experiences</h5>
-              <small>Hello</small>
+              <h5>Clients</h5>
+              {/* <small>Hello</small> */}
             </article>
 
             <article className="about-card">
               <VscFolderLibrary />
-              <h5>Experiences</h5>
-              <small>Hello</small>
+              <h5>Projects</h5>
+              {/* <small>Hello</small> */}
             </article>
           </div>
+
+          <p>
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            corporis quae sapiente unde sequi ratione id atque provident cum
+            fugiat suscipit accusamus, ad quos animi quo porro ab totam
+            deserunt.
+          </p>
+
+          <a href="#contact" className="btn btn-primary">Contact Me</a>
         </div>
       </div>
     </section>
