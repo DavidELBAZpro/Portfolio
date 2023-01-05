@@ -13,7 +13,7 @@ export const Portfolio = () => {
           return (
             <article key={id} className="portfolio-item">
               <div  className="portfolio-item-image">
-                <img src={image} alt={title} />
+                <img loading="lazy" src={image} alt={title} />
               </div>
               <h3>{title}</h3>
               <div className="portfolio-item-cta">

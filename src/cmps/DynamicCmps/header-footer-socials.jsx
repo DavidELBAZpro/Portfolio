@@ -2,7 +2,7 @@ import { BsLinkedin } from "react-icons/bs"
 import { GoMarkGithub } from "react-icons/go"
 import { BsTwitter } from "react-icons/bs"
 
-export const HeaderSocials = () => {
+export const HeaderAndFooterSocials = () => {
   return (
     <div className="header-socials">
       <a href="https://www.linkedin.com/in/davidelbaz1/" target="_blank">

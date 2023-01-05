@@ -12,7 +12,7 @@ export const About = () => {
       <div className="container about-container">
         <div className="about-me">
           <div className="about-me-image">
-            <img src={imageOfMe} alt="David ELBAZ" />
+            <img loading="lazy" src={imageOfMe} alt="David ELBAZ" />
           </div>
         </div>
         <div className="about-content">

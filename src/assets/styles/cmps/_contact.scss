@@ -1,12 +1,50 @@
 .container .contact-container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
 }
 
 .contact-options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-option {
+  background: $clr-bg-variant;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: $main-transition;
+
+  a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  &:hover {
+    background: transparent;
+    border-color: $clr-primary-variant;
+  }
+}
+
+.contact-option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// FORM
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+
+.MuiBox-root {
+  background: rgba(205, 203, 203, 0.2);
+  margin: 1rem 0;
+  border-radius: 1rem;
 }

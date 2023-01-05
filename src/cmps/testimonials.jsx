@@ -24,7 +24,7 @@ export const Testimonials = () => {
           return (
             <SwiperSlide key={index} className="testimonials">
               <div className="client-avatar">
-                <img src={avatarImg} alt={name} />
+                <img loading="lazy" src={avatarImg} alt={name} />
               </div>
               <h5 className="client-name">{name}</h5>
               <small className="client-review">{review}</small>

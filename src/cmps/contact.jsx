@@ -27,15 +27,15 @@ export const Contact = () => {
           </article>
 
           <article className="contact-option">
-            <BsLinkedin />
-            <h4>Whatsapp</h4>
+            <BsLinkedin className="contact-option-icon"/>
+            <h4>LinkedIn</h4>
             <a href="https://www.linkedin.com/in/davidelbaz1" target="_blank">
               Connect with me on LinkedIn
             </a>
           </article>
 
           <article className="contact-option">
-            <BsTwitter />
+            <BsTwitter className="contact-option-icon"/>
             <h4>Twitter</h4>
             <a
               href="https://twitter.com/messages/compose?recipient_id=1144874629"
@@ -46,7 +46,7 @@ export const Contact = () => {
           </article>
 
           <article className="contact-option">
-            <BsWhatsapp />
+            <BsWhatsapp className="contact-option-icon"/>
             <h4>Whatsapp</h4>
             <a
               href="https://web.whatsapp.com/send?phone=+330767633565"
