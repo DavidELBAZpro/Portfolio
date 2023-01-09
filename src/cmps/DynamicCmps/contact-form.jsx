@@ -55,11 +55,11 @@ export const ContactForm = () => {
             name="name"
             border="1px solid #1976D2"
             active="true"
-            // value={name}
+            size="large"
           />
           <TextField
             id="outlined-textarea"
-            label="email"
+            label="Email"
             multiline
             maxRows={2}
             variant="filled"
@@ -67,8 +67,6 @@ export const ContactForm = () => {
             fullWidth
             type="email"
             name="email"
-            // value={email}
-            border="1px solid #1976D2"
           />
           <TextField
             id="outlined-multiline-static"

@@ -4,17 +4,17 @@ import { BsTwitter } from "react-icons/bs"
 
 export const HeaderAndFooterSocials = () => {
   return (
-    <div className="header-socials">
+    <>
       <a href="https://www.linkedin.com/in/davidelbaz1/" target="_blank">
         <BsLinkedin />
       </a>
       <a href="https://github.com/DavidELBAZpro" target="_blank">
         <GoMarkGithub />
       </a>
-      <a href="https://twitter.com/DvdElbaz" target="_blank">
+      <a href="https://twitter.com/DavidFrenchDev" target="_blank">
         <BsTwitter />
       </a>
-    </div>
+    </>
   )
 }
 

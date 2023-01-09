@@ -7,7 +7,6 @@ export const Header = () => {
   return (
     <header id="header">
       <div className="container header-container">
-        <h5>Hello I'm</h5>
         <h1>David ELBAZ</h1>
         <h5 className="text-light">
           <Typewriter
@@ -21,12 +20,13 @@ export const Header = () => {
                 .pauseFor(1000)
                 .typeString("Full Stack Developer")
                 .start()
-                
             }
           />
         </h5>
         <CTA />
-        <HeaderAndFooterSocials />
+        <div className="header-socials">
+          <HeaderAndFooterSocials />
+        </div>
 
         <div className="me">
           <img

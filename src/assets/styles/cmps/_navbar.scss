@@ -31,3 +31,11 @@ nav a.active {
     background: $clr-bg;
     color: $clr-bg-white;
 }
+
+
+@media (max-width: $break-sm) {
+  nav {
+    bottom: 1rem;
+  }
+}
+
