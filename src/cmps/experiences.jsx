@@ -16,7 +16,7 @@ export const Experiences = () => {
                 <article className="experience-details" id={id}>
                   <div>
                     <div style={{ height: "100px", width: "100px" }}>
-                      <Icon file={image} color={color} scale={8} spin={true} />
+                      <Icon file={image} color={color} scale={8} spin={0} />
                       <h4>{title}</h4>
                     </div>
                   </div>
