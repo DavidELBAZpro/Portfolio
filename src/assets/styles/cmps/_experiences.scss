@@ -8,11 +8,12 @@
   background: transparent;
   border-color: $clr-primary-variant;
   cursor: pointer;
+  transition: $main-transition;
 }
 
 .experience-container > div {
   background: $clr-bg-variant;
-  padding: 2.4rem 5rem;
+  padding: 2rem 2rem 4.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
 
@@ -25,8 +26,9 @@
 
 .experience-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 1.5rem;
+  text-align: center;
 }
 
 .experience-details {

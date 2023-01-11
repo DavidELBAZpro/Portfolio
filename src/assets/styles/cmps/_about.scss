@@ -9,7 +9,7 @@
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, $clr-primary, transparent);
+  background: transparent;
   display: grid;
   place-items: center;
 }
@@ -17,15 +17,19 @@
 .about-me-image {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
   width: 80%;
   bottom: 5rem;
   position: relative;
   transition: $main-transition;
+
+  img {
+    animation: infinite-rotate 15s linear infinite;
+  }
 }
 
 .about-me-image:hover {
-  transform: rotate(0deg);
+  display: inline-block;
+  animation: ease-in 1s infinite;
 }
 
 .about-cards {
@@ -78,6 +82,10 @@
   p {
     margin-bottom: 1rem;
     color: $clr-primary;
+
+    .collaborate {
+      font-weight: 900;
+    }
   }
 
   .btn:hover {
@@ -96,7 +104,7 @@
 
   .about-me {
     width: 50%;
-    margin: 2rem auto 4rem;
+    margin: 0rem auto ;
 
     p {
       margin: 1rem 0 1.5rem;
@@ -105,9 +113,19 @@
 }
 
 @media (max-width: $break-sm) {
+  #about {
+    h2 {
+      margin: 0;
+    }
+  }
   .about-me {
-    width: 65%;
-    margin: 0 auto 3rem;
+    width: 7rem;
+    margin: 0 auto;
+  }
+
+  .about-me-image {
+    bottom: 0;
+    width: 100%;
   }
 
   .about-cards {

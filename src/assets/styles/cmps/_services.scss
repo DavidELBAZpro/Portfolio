@@ -1,7 +1,7 @@
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   width: 95%;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .services-list {
-    padding: 2rem;
+    padding: 1rem;
 
     
 
@@ -45,7 +45,7 @@
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
 

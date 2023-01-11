@@ -1,7 +1,5 @@
-import { BsPatchCheckFill } from "react-icons/bs";
-
-
-
+import { Icon } from "react-3d-icons";
+import { frontData, backData } from "../data/experiences.data";
 
 export const Experiences = () => {
   return (
@@ -13,60 +11,36 @@ export const Experiences = () => {
         <div className="experience-frontend">
           <h3>Frontend Development</h3>
           <div className="experience-content">
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>HTML</h4>
-              </div>
-            </article>
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>CSS</h4>
-              </div>
-            </article>
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>Bootstrap</h4>
-              </div>
-            </article>
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-              </div>
-            </article>
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>REACT</h4>
-              </div>
-            </article>
+            {frontData.map(({ id, image, color, title }) => {
+              return (
+                <article className="experience-details" id={id}>
+                  <div>
+                    <div style={{ height: "100px", width: "100px" }}>
+                      <Icon file={image} color={color} scale={8} spin={true} />
+                      <h4>{title}</h4>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
 
         <div className="experience-backend">
-          <h3>Backend Development</h3>
+          <h3>Backend Development & Tools</h3>
           <div className="experience-content">
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>NODE</h4>
-              </div>
-            </article>
-
-            <article className="experience-details">
-              <BsPatchCheckFill className="experience-details-icon" />
-              <div>
-                <h4>MongoDB</h4>
-              </div>
-            </article>
+          {backData.map(({ id, image, color, title }) => {
+              return (
+                <article className="experience-details" id={id}>
+                  <div>
+                    <div style={{ height: "100px", width: "100px" }}>
+                      <Icon file={image} color={color} scale={8} spin={true} />
+                      <h4>{title}</h4>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>
