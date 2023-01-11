@@ -20,31 +20,30 @@ export const About = () => {
             <article className="about-card">
               <FaAward />
               <h5>Experiences</h5>
-              <small>+1 year</small>
             </article>
 
             <article className="about-card">
               <FiUsers />
               <h5>Clients</h5>
-              <small className="text-light">Hello</small>
             </article>
 
             <article className="about-card">
               <VscFolderLibrary />
               <h5>Projects</h5>
-              <small>Hello</small>
             </article>
           </div>
 
           <p>
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            corporis quae sapiente unde sequi ratione id atque provident cum
-            fugiat suscipit accusamus, ad quos animi quo porro ab totam
-            deserunt.
+            A <strong>highly motivated team player</strong> , hard worker, focusing on problem
+            solving and detailed orientation, self-learner, responsible, with
+            leadership skills and <span className="underlined">adapting quickly to new environments.</span> 
+            <br />
+            <span>Let's collaborate !</span>
           </p>
 
-          <a href="#contact" className="btn btn-primary">Contact Me</a>
+          <a href="#contact" className="btn btn-primary">
+            Contact Me
+          </a>
         </div>
       </div>
     </section>

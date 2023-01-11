@@ -13,11 +13,16 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background: $clr-bg;
-    color: $clr-bg-white;
-    line-height: 1.7;
-    background-image: url('../../imgs/bg-texture.png');
+  font-family: "Poppins", sans-serif;
+  background: $clr-bg;
+  color: $clr-bg-white;
+  line-height: 1.7;
+  background-image: url("../../imgs/bg-texture.png");
+}
+
+p {
+  letter-spacing: 0.03rem;
+  word-spacing: 0.25rem;
 }
 
 ::-webkit-scrollbar {

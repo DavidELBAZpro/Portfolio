@@ -13,13 +13,16 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.3",
+    "@react-three/fiber": "^8.10.0",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
+    "react-3d-icons": "^1.0.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "sweetalert2": "^11.6.16",
     "sweetalert2-react-content": "^5.0.7",
     "swiper": "^8.4.5",
+    "three": "^0.148.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

@@ -91,6 +91,10 @@ img {
   object-fit: cover;
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
 @media (max-width: $break-lg) {
   .container {
     width: $container-width-md;

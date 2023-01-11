@@ -8,14 +8,14 @@ export const Header = () => {
     <header id="header">
       <div className="container header-container">
         <h1>David ELBAZ</h1>
-        <h5 className="text-light">
+        <h5 className="text-light typewritter">
           <Typewriter
             onInit={(typewriter) =>
               typewriter
                 .typeString("Full Stack Developer")
                 .pauseFor(1000)
                 .deleteAll(100)
-                .typeString("Front End Developer")
+                .typeString("Front-End Developer")
                 .deleteAll(100)
                 .pauseFor(1000)
                 .typeString("Full Stack Developer")
@@ -30,7 +30,6 @@ export const Header = () => {
 
         <div className="me">
           <img
-            loading="lazy"
             src={imageOfMe}
             alt="me"
             title="David ELBAZ"
@@ -38,7 +37,7 @@ export const Header = () => {
           />
         </div>
 
-        <a href="#contact" className="scroll-down">
+        <a href="#portfolio" className="scroll-down">
           Scroll Down
         </a>
       </div>

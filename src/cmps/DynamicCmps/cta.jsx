@@ -1,4 +1,4 @@
-import CV from '.././../assets/imgs/cv.pdf'
+import CV from '/Users/dvdelbaz/Desktop/portfolioWebsite/davidElbaz_portfolio/src/assets/imgs/CV-DAVID-ELBAZ.pdf'
 
 export const CTA = () => {
     return (
