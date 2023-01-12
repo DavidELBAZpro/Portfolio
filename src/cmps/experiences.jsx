@@ -1,4 +1,4 @@
-import { Icon } from "react-3d-icons";
+// import { Icon } from "react-3d-icons";
 import { frontData, backData } from "../data/experiences.data";
 
 export const Experiences = () => {
@@ -11,14 +11,12 @@ export const Experiences = () => {
         <div className="experience-frontend">
           <h3>Frontend Development</h3>
           <div className="experience-content">
-            {frontData.map(({ id, image, color, title }) => {
+            {frontData.map(({ id, Img, color, title }) => {
               return (
-                <article className="experience-details" id={id}>
-                  <div>
+                <article className="experience-details" key={id}>
                     <div style={{ height: "100px", width: "100px" }}>
-                      <Icon file={image} color={color} scale={8} spin={0} />
-                      <h4>{title}</h4>
-                    </div>
+                      <Img color={color} fontSize="4em"/>
+                      <h4>{title}</h4>    
                   </div>
                 </article>
               );
@@ -29,12 +27,12 @@ export const Experiences = () => {
         <div className="experience-backend">
           <h3>Backend Development & Tools</h3>
           <div className="experience-content">
-          {backData.map(({ id, image, color, title }) => {
+            {backData.map(({ id, Img, color, title }) => {
               return (
-                <article className="experience-details" id={id}>
+                <article className="experience-details" key={id}>
                   <div>
                     <div style={{ height: "100px", width: "100px" }}>
-                      <Icon file={image} color={color} scale={8} spin={true} />
+                     < Img color={color} fontSize="4em" />
                       <h4>{title}</h4>
                     </div>
                   </div>

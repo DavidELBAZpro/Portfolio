@@ -17,17 +17,17 @@ export const Contact = () => {
               href="https://mail.google.com/mail/?view=cm&source=mailto&to=david.elbaz.pro@gmail.com"
               target="_blank"
             >
-              Send me an Email (Gmail)
+              Send me an Email ( Gmail )
             </a>
             <div className="link-to-gmail">
               <a href="mailto:david.elbaz.pro@gmail.com" target="_blank">
-                Send me an Email (others)
+                Send me an Email ( others )
               </a>
             </div>
           </article>
 
           <article className="contact-option">
-            <BsLinkedin className="contact-option-icon"/>
+            <BsLinkedin color="#0173AB" className="contact-option-icon"/>
             <h4>LinkedIn</h4>
             <a href="https://www.linkedin.com/in/davidelbaz1" target="_blank">
               Connect with me on LinkedIn
@@ -35,7 +35,7 @@ export const Contact = () => {
           </article>
 
           <article className="contact-option">
-            <BsTwitter className="contact-option-icon"/>
+            <BsTwitter color="#1B93E3" className="contact-option-icon"/>
             <h4>Twitter</h4>
             <a
               href="https://twitter.com/messages/compose?recipient_id=1144874629"
@@ -46,7 +46,7 @@ export const Contact = () => {
           </article>
 
           <article className="contact-option">
-            <BsWhatsapp className="contact-option-icon"/>
+            <BsWhatsapp color="#34A747" className="contact-option-icon"/>
             <h4>Whatsapp</h4>
             <a
               href="https://web.whatsapp.com/send?phone=+330767633565"

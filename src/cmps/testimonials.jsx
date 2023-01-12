@@ -20,13 +20,14 @@ export const Testimonials = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {testimonialsData.map(({ avatarImg, name, review }, index) => {
+        {testimonialsData.map(({ avatarImg, name, company, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonials">
               <div className="client-avatar">
                 <img loading="lazy" src={avatarImg} alt={name} />
               </div>
               <h5 className="client-name">{name}</h5>
+              <h6 className="client-company">{company}</h6>
               <small className="client-review">{review}</small>
             </SwiperSlide>
           );

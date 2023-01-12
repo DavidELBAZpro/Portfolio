@@ -1,1 +1,1 @@
-// export { ReactComponent as Logo } from '../assets/imgs/logo.svg'
+// export { ReactComponent as Html } from "../assets/svgs/html.svg"
