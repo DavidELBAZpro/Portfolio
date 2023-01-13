@@ -1,10 +1,10 @@
 .testimonials-container {
-  width: 40%;
+  width: 50%;
   padding-bottom: 4rem;
 }
 
 .client-avatar {
-  width: 4rem;
+  width: 5rem;
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 50%;
@@ -21,7 +21,7 @@
 }
 
 .client-review {
-  color: $clr-light;
+  color: $clr-primary;
   font-weight: 300;
   display: block;
   width: 80%;
@@ -35,6 +35,10 @@
   width: 0.6rem;
   height: 0.6rem;
 }
+.swiper-button-next, .swiper-button-prev {
+  top: 35%;
+  width: 1em;
+}
 
 // MEDIA QUERIES
 
@@ -45,11 +49,11 @@
 }
 
 @media (max-width: $break-sm) {
-  .container .testimonials-container {
-    width: $container-width-sm;
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
   }
 
-  .client-review {
-    width: $container-width-sm;
-  }
+  .testimonials-container {
+    width: 90%;
+    }
 }

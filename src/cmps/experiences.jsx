@@ -14,9 +14,9 @@ export const Experiences = () => {
             {frontData.map(({ id, Img, color, title }) => {
               return (
                 <article className="experience-details" key={id}>
-                    <div style={{ height: "100px", width: "100px" }}>
-                      <Img color={color} fontSize="4em"/>
-                      <h4>{title}</h4>    
+                  <div style={{ height: "100px", width: "100px" }}>
+                    <Img color={color} fontSize="4em" />
+                    <h4>{title}</h4>
                   </div>
                 </article>
               );
@@ -30,11 +30,12 @@ export const Experiences = () => {
             {backData.map(({ id, Img, color, title }) => {
               return (
                 <article className="experience-details" key={id}>
-                  <div>
-                    <div style={{ height: "100px", width: "100px" }}>
-                     < Img color={color} fontSize="4em" />
-                      <h4>{title}</h4>
-                    </div>
+                  <div
+                    className="experience-logo-title"
+                    style={{ height: "100px", width: "100px" }}
+                  >
+                    <Img color={color} fontSize="4em" />
+                    <h4 className="logo-title" style={{ color:{color} }}>{title}</h4>
                   </div>
                 </article>
               );

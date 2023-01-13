@@ -41,6 +41,14 @@
   color: $clr-primary;
 }
 
+.experience-logo-title {
+  opacity: 0.6;
+}
+
+.logo-title {
+  color: red;
+}
+
 // MEDIA QUERIES
 
 @media (max-width: $break-lg) {
@@ -63,7 +71,9 @@
   .experience-container {
     gap: 1rem;
   }
-
+  .experience-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .experience-container > div {
     width: 100%;
     padding: 2rem 1rem;

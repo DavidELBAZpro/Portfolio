@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import { testimonialsData } from "../data/testimonials.data";
 
 import "swiper/css";
@@ -15,10 +15,12 @@ export const Testimonials = () => {
 
       <Swiper
         className="container testimonials-container"
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        navigation={{ clickable: true }}
+        // EffectCards
       >
         {testimonialsData.map(({ avatarImg, name, company, review }, index) => {
           return (
@@ -27,7 +29,7 @@ export const Testimonials = () => {
                 <img loading="lazy" src={avatarImg} alt={name} />
               </div>
               <h5 className="client-name">{name}</h5>
-              <h6 className="client-company">{company}</h6>
+              <h6 className="client-company text-light">{company}</h6>
               <small className="client-review">{review}</small>
             </SwiperSlide>
           );
