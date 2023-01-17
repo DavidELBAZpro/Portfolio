@@ -11,12 +11,9 @@
   border: 1px solid $clr-primary;
   height: fit-content;
   transition: $main-transition;
-  :hover {
-    // background: transparent;
-    // border-color: $clr-primary-variant;
+  &:hover {
     cursor: pointer;
   }
-  
 }
 
 .services-head {
@@ -33,58 +30,53 @@
 }
 
 .services-list {
-    padding: 1rem;
+  padding: 1rem;
+  li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+  }
 
-    
-
-    li {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 0.8rem;
-       
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 .services-list li:hover {
-    color: $clr-primary;
-    font-size: 200;
-    transition: $main-transition;
-    transform: scale(1.1);
+  color: $clr-primary;
+  font-size: 200;
+  transition: $main-transition;
+  transform: scale(1.04);
 
-    .services-list-icon {
-        color: green;
-        transition: $main-transition;
-        transform: scale(2);
-    }
+  .services-list-icon {
+    color: green;
+    transition: $main-transition;
+    transform: scale(2);
+  }
 }
 
 .services-list-icon {
-    color: $clr-primary;
-    margin-top: 2px;
-    width: 100%;
+  color: $clr-primary;
+  margin-top: 2px;
+  width: 3rem;
 }
-
 
 // MEDIA QUERIES
 
 @media (max-width: $break-lg) {
-    .services-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 
-    .services {
-        height: auto;
-    }
+  .services {
+    height: auto;
   }
-  
-  @media (max-width: $break-sm) {
-    .services-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+}
+
+@media (max-width: $break-sm) {
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
+}

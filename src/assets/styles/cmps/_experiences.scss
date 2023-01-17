@@ -41,13 +41,12 @@
   color: $clr-primary;
 }
 
-// .experience-logo-title {
-//   opacity: 0.6;
-// }
-
-// .logo-title {
-//   color: red;
-// }
+.experience-logo-title {
+  transition: $main-transition;
+  &:hover {
+    transform: scale(1.15);
+  }
+}
 
 // MEDIA QUERIES
 

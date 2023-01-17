@@ -14,9 +14,12 @@ export const Experiences = () => {
             {frontData.map(({ id, Img, color, title }) => {
               return (
                 <article className="experience-details" key={id}>
-                  <div style={{ height: "100px", width: "100px" }}>
+                  <div
+                    style={{ height: "100px", width: "100px" }}
+                    className="experience-logo-title"
+                  >
                     <Img color={color} fontSize="4em" />
-                    <h4>{title}</h4>
+                    <h4 className="logo-title" style={{ color:  color  }}>{title}</h4>
                   </div>
                 </article>
               );
@@ -35,7 +38,9 @@ export const Experiences = () => {
                     style={{ height: "100px", width: "100px" }}
                   >
                     <Img color={color} fontSize="4em" />
-                    <h4 className="logo-title" style={{ color:{color} }}>{title}</h4>
+                    <h4 className="logo-title" style={{ color:  color  }}>
+                      {title}
+                    </h4>
                   </div>
                 </article>
               );
