@@ -5,7 +5,7 @@ export const portfolioData = [
     {
         id: 1,
         image: MelodifyImg,
-        title: 'Melodify',
+        title: 'Hello',
         githubUrl: 'https://github.com',
         demoUrl: 'https://google.com'
     },

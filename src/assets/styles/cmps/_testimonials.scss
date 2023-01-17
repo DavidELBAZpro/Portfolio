@@ -1,5 +1,5 @@
 .testimonials-container {
-  width: 50%;
+  width: 65%;
   padding-bottom: 4rem;
 }
 
@@ -22,10 +22,10 @@
 
 .client-review {
   color: $clr-primary;
-  font-weight: 300;
+  font-weight: 800;
   display: block;
   width: 80%;
-  margin: 0.8rem auto 0;
+  margin: 1rem auto 0;
 }
 
 // SWIPER
@@ -35,7 +35,8 @@
   width: 0.6rem;
   height: 0.6rem;
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   top: 35%;
   width: 1em;
 }
@@ -44,16 +45,17 @@
 
 @media (max-width: $break-lg) {
   .container .testimonials-container {
-    width: 60%;
+    width: 70%;
   }
 }
 
 @media (max-width: $break-sm) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
 
   .testimonials-container {
-    width: 90%;
-    }
+    width: 95%;
+  }
 }
