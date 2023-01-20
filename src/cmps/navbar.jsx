@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <a href="#" className={ activeNav === '#' ? 'active' : ''}>
+      <a href="#" onClick={() => setActiveNav('#')} className={ activeNav === '#' ? 'active' : ''}>
         <AiOutlineHome />
       </a>
       <a href="#about" onClick={() => setActiveNav('#about')} className={ activeNav === '#about' ? 'active' : ''}>
