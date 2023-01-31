@@ -1,4 +1,4 @@
-import iconOfMe from "/Users/dvdelbaz/Documents/GitHub/Portfolio/src/assets/imgs/PORTFOLIO-FAVICON 2.png";
+import iconOfMe from "../assets/imgs/PORTFOLIO-FAVICON 2.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
