@@ -17,7 +17,7 @@ export const Contact = () => {
               href="https://mail.google.com/mail/?view=cm&source=mailto&to=david.elbaz.pro@gmail.com"
               target="_blank"
             >
-              Send me an Email ( Gmail )
+              Send me an Email ( Gmail ) 
             </a>
             <div className="link-to-gmail">
               <a href="mailto:david.elbaz.pro@gmail.com" target="_blank">
