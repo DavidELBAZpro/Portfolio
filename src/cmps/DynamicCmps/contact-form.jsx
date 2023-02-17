@@ -1,31 +1,31 @@
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
+import Box from '@mui/material/Box'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
+import React, { useRef } from 'react'
+import emailjs from 'emailjs-com'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export const ContactForm = () => {
-  const form = useRef();
-  const MySwal = withReactContent(Swal);
+  const form = useRef()
+  const MySwal = withReactContent(Swal)
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs.sendForm(
-      "service_9ns196u",
-      "template_7vtsgcu",
+      'service_9ns196u',
+      'template_7vtsgcu',
       form.current,
-      "KuzXB_B30hkDqsuaE"
-    );
+      'KuzXB_B30hkDqsuaE'
+    )
     MySwal.fire({
-      icon: "success",
+      icon: 'success',
       title: <i>Message sended !</i>,
       html: <i>I will get back to you soon</i>,
-    });
-    e.target.reset();
-  };
+    })
+    e.target.reset()
+  }
 
   return (
     <>
@@ -34,16 +34,17 @@ export const ContactForm = () => {
         ref={form}
         component="form"
         sx={{
-          "& .MuiTextField-root": {
+          '& .MuiTextField-root': {
             marginTop: 5,
             marginBottom: 2,
-            maxWidth: "150ch",
+            maxWidth: '150ch',
           },
         }}
         autoComplete="on"
       >
         <div>
           <TextField
+            inputProps={{ style: { color: '#A57E4B' } }}
             id="outlined-multiline-flexible"
             label="Full Name"
             multiline
@@ -58,6 +59,7 @@ export const ContactForm = () => {
             size="large"
           />
           <TextField
+            inputProps={{ style: { color: '#A57E4B' } }}
             id="outlined-textarea"
             label="Email"
             multiline
@@ -69,6 +71,7 @@ export const ContactForm = () => {
             name="email"
           />
           <TextField
+            inputProps={{ style: { color: '#A57E4B' } }}
             id="outlined-multiline-static"
             label="Your message"
             multiline
@@ -77,7 +80,6 @@ export const ContactForm = () => {
             fullWidth
             type="message"
             name="message"
-            // value={message}
           />
         </div>
         <div className="submit-btn">
@@ -92,5 +94,5 @@ export const ContactForm = () => {
         </div>
       </Box>
     </>
-  );
-};
+  )
+}

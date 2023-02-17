@@ -1,6 +1,6 @@
-import { MdOutlineEmail } from "react-icons/md";
-import { BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
-import { ContactForm } from "./DynamicCmps/contact-form";
+import { MdOutlineEmail } from 'react-icons/md'
+import { BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import { ContactForm } from './DynamicCmps/contact-form'
 
 export const Contact = () => {
   return (
@@ -17,25 +17,37 @@ export const Contact = () => {
               href="https://mail.google.com/mail/?view=cm&source=mailto&to=david.elbaz.pro@gmail.com"
               target="_blank"
             >
-              Send me an Email ( Gmail ) 
+              Send me an Email ( Gmail )
             </a>
             <div className="link-to-gmail">
-              <a href="mailto:david.elbaz.pro@gmail.com" target="_blank">
+              <a
+                href="mailto:david.elbaz.pro@gmail.com"
+                target="_blank"
+              >
                 Send me an Email ( others )
               </a>
             </div>
           </article>
 
           <article className="contact-option">
-            <BsLinkedin color="#0173AB" className="contact-option-icon"/>
+            <BsLinkedin
+              color="#0173AB"
+              className="contact-option-icon"
+            />
             <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/davidelbaz1" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/davidelbaz1"
+              target="_blank"
+            >
               Connect with me on LinkedIn
             </a>
           </article>
 
           <article className="contact-option">
-            <BsTwitter color="#1B93E3" className="contact-option-icon"/>
+            <BsTwitter
+              color="#1B93E3"
+              className="contact-option-icon"
+            />
             <h4>Twitter</h4>
             <a
               href="https://twitter.com/messages/compose?recipient_id=1144874629"
@@ -46,7 +58,10 @@ export const Contact = () => {
           </article>
 
           <article className="contact-option">
-            <BsWhatsapp color="#34A747" className="contact-option-icon"/>
+            <BsWhatsapp
+              color="#34A747"
+              className="contact-option-icon"
+            />
             <h4>Whatsapp</h4>
             <a
               href="https://web.whatsapp.com/send?phone=+330767633565"
@@ -56,14 +71,9 @@ export const Contact = () => {
             </a>
           </article>
         </div>
-        {/* <form action="">
-          <input type="text" name="name" placeholder="Fullname" required />
-          <input type="text" name="name" placeholder="Email" required />
-          <textarea type="text" rows="10" name="message" placeholder="Type your message ..." required />
-          <button type="submit" className="btn btn-primary">Send</button>
-        </form> */}
+
         <ContactForm />
       </div>
     </section>
-  );
-};
+  )
+}
