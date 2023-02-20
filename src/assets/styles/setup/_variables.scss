@@ -1,14 +1,13 @@
 // COLOR PALETTE
 $clr-bg: #1f1f38;
 $clr-bg-variant: #2c2c6c;
-// $clr-primary: #4db5ff;
-$clr-primary: #A57E4B;
+$clr-primary: #a57e4b;
 $clr-primary-variant: rgba(77, 181, 255, 0.4);
 $clr-bg-white: rgba(255, 255, 255, 0.757);
 $clr-light: rgba(255, 255, 255, 0.6);
 
-$shadow-color: #A57E4B;
-$shadow-color-light: #A57E4B;
+$shadow-color: #a57e4b;
+$shadow-color-light: #a57e4b;
 
 // CONTAINER SIZES
 $container-width-lg: 75%;
@@ -26,32 +25,30 @@ $break-xl: 1330px;
 
 // TRANSITION
 
-$main-transition : all 450ms ease;
-
+$main-transition: all 300ms ease;
 
 // MEDIA QUERIES
 
 @mixin for-mobile-layout {
-    @media (max-width: $break-sm) {
-      @content;
-    }
+  @media (max-width: $break-sm) {
+    @content;
   }
-  
-  @mixin for-small-layout {
-    @media (min-width: $break-sm) {
-      @content;
-    }
-  }
-  
-  @mixin for-medium-layout {
-    @media (min-width: $break-md) {
-      @content;
-    }
-  }
-  
-  @mixin for-large-layout {
-    @media (min-width: $break-lg) {
-      @content;
-    }
-  }
+}
 
+@mixin for-small-layout {
+  @media (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin for-medium-layout {
+  @media (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin for-large-layout {
+  @media (min-width: $break-lg) {
+    @content;
+  }
+}
