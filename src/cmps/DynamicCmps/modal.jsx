@@ -9,7 +9,7 @@ export const PortfolioModal = ({ image, title, description, video }) => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 950,
+    width: 900,
     height: 720,
     bgcolor: '#1f1f38',
     border: '2px solid #000',
@@ -53,11 +53,10 @@ export const PortfolioModal = ({ image, title, description, video }) => {
           </div>
           {video && (
             <video
+              loop
               autoPlay
-              style={{
-                maxWidth: '55rem',
-              }}
-              className="modal-image"
+              style={{}}
+              className="modal-video"
               src={video}
               alt="portfolio-image"
             />

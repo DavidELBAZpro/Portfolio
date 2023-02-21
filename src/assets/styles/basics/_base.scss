@@ -13,11 +13,11 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: $clr-bg;
   color: $clr-bg-white;
   line-height: 1.7;
-  background-image: url("../../imgs/bg-texture.png");
+  background-image: url('../../imgs/bg-texture.png');
 }
 
 p {
@@ -27,4 +27,8 @@ p {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+video {
+  width: -webkit-fill-available;
 }

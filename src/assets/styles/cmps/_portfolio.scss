@@ -44,7 +44,7 @@
   justify-content: space-between;
   margin: 0 0 1.5rem 0;
 }
-.modal-image {
+.modal-video {
   border-radius: 0.5rem;
 }
 
@@ -65,5 +65,8 @@
   .portfolio-container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  .MuiBox-root.css-r67nlf {
+    width: 22rem;
   }
 }
