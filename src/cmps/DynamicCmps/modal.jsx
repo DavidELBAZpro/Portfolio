@@ -9,7 +9,8 @@ export const PortfolioModal = ({ image, title, description, video }) => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 600,
+    width: 950,
+    height: 720,
     bgcolor: '#1f1f38',
     border: '2px solid #000',
     boxShadow: 24,
@@ -50,16 +51,21 @@ export const PortfolioModal = ({ image, title, description, video }) => {
               <GoEyeClosed size="1.5rem" />
             </Button>
           </div>
-          <video
-            autoPlay
-            style={{ maxWidth: '35rem' }}
-            className="modal-image"
-            src={video}
-            alt="portfolio-image"
-          />
+          {video && (
+            <video
+              autoPlay
+              style={{
+                maxWidth: '55rem',
+              }}
+              className="modal-image"
+              src={video}
+              alt="portfolio-image"
+            />
+          )}
           <Typography
             id="modal-modal-description"
             sx={{ mt: 2 }}
+            style={{ whiteSpace: 'pre-line' }}
           >
             {description}
           </Typography>

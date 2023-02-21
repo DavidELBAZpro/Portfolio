@@ -37,7 +37,12 @@ export const Testimonials = () => {
               </div>
               <h5 className="client-name">{name}</h5>
               <h6 className="client-company text-light">{company}</h6>
-              <small className="client-review">{review}</small>
+              <small
+                className="client-review"
+                style={{ whiteSpace: 'pre-line' }}
+              >
+                {review}
+              </small>
             </SwiperSlide>
           )
         })}

@@ -1,4 +1,8 @@
-import MelodifyImg from "../assets/imgs/portfolio1.jpg";
+import MelodifyImg from '../assets/imgs/melodify-image.png'
+import PanImg from '../assets/imgs/pan-image.png'
+import BnbImg1 from '../assets/imgs/bnb-image1.png'
+import BnbImg2 from '../assets/imgs/bnb-image2.png'
+
 
 
 export const portfolioData = [
@@ -10,14 +14,15 @@ export const portfolioData = [
         githubUrl: "https://github.com/Aviv-rs/Melodify",
         demoUrl: "https://melodify.onrender.com/music",
         description: "An music application inspired by Spotify created using React, Redux, and SASS (Front), \
-        Node.js (Back), and MongoDB in collaboration with two other developers in 10 days that includes\:\
+        Node.js (Back), and MongoDB in collaboration with two other developers in a 15 days sprint that includes\:\n\
         • Live updating using a socket API\
         • Creation, editing, and drag & drop of playlists\
         • PWA(Progressive Web App) support"
     },
     {
         id: 2,
-        image: 'https://res.cloudinary.com/drei2wlxj/image/upload/v1676976594/cld-sample-5.jpg',
+        image: PanImg,
+
         title: "PAN - Physicians Association for Nutrition",
         githubUrl: "https://github.com/Dalya1812/panProject",
         demoUrl: "https://pan-int.org",
@@ -25,7 +30,8 @@ export const portfolioData = [
     },
     {
         id: 3,
-        image: MelodifyImg,
+        image: BnbImg1,
+        video: BnbImg2,
         title: "BnB ERP",
         githubUrl: "https://github.com/DavidELBAZpro",
         demoUrl: "https://www.google.com/search?q=this+project+is+private&rlz=1C5CHFA_enIL914IL914&oq=this+project+is+private&aqs=chrome..69i57j0i22i30j0i390l2.5884j0j7&sourceid=chrome&ie=UTF-8",
@@ -34,7 +40,7 @@ export const portfolioData = [
     {
         id: 4,
         image: MelodifyImg,
-        title: "Sareden",
+        title: "MyGames",
         githubUrl: "https://github.com/DavidELBAZpro",
         demoUrl: "https://sareden.com/password",
         description: "E-commerce for Sareden - Boulangerie Patisserie developed with Shopify and Hydrogen "
