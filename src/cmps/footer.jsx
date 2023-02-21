@@ -1,9 +1,14 @@
-import { HeaderAndFooterSocials } from "./DynamicCmps/header-footer-socials";
+import { HeaderAndFooterSocials } from './DynamicCmps/header-footer-socials'
 
 export const Footer = () => {
   return (
-    <footer >
-      <a href="#" className="footer-logo">David ELBAZ</a>
+    <footer>
+      <a
+        href="#"
+        className="footer-logo"
+      >
+        David ELBAZ
+      </a>
 
       <ul className="permalinks">
         <li>
@@ -42,5 +47,5 @@ export const Footer = () => {
         </small>
       </div>
     </footer>
-  );
-};
+  )
+}

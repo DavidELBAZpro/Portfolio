@@ -1,7 +1,7 @@
-import { CTA } from "./DynamicCmps/cta";
-import { HeaderAndFooterSocials } from "./DynamicCmps/header-footer-socials";
-import imageOfMe from "../../src/assets/imgs/me.png";
-import Typewriter from "typewriter-effect";
+import { CTA } from './DynamicCmps/cta'
+import { HeaderAndFooterSocials } from './DynamicCmps/header-footer-socials'
+import imageOfMe from '../../src/assets/imgs/me.png'
+import Typewriter from 'typewriter-effect'
 
 export const Header = () => {
   return (
@@ -12,13 +12,13 @@ export const Header = () => {
           <Typewriter
             onInit={(typewriter) =>
               typewriter
-                .typeString("Full Stack Developer")
+                .typeString('Full Stack Developer')
                 .pauseFor(1000)
                 .deleteAll(100)
-                .typeString("Front-End Developer")
+                .typeString('Front-End Developer')
                 .deleteAll(100)
                 .pauseFor(1000)
-                .typeString("Full Stack Developer")
+                .typeString('Full Stack Developer')
                 .start()
             }
           />
@@ -37,10 +37,13 @@ export const Header = () => {
           />
         </div>
 
-        <a href="#portfolio" className="scroll-down">
+        <a
+          href="#portfolio"
+          className="scroll-down"
+        >
           Scroll Down
         </a>
       </div>
     </header>
-  );
-};
+  )
+}

@@ -1,9 +1,9 @@
-import { BiCheckDouble } from "react-icons/bi";
+import { BiCheckDouble } from 'react-icons/bi'
 import {
   uiServicesData,
   webServicesData,
   softSkillsData,
-} from "../data/services.data";
+} from '../data/services.data'
 
 export const Services = () => {
   return (
@@ -18,13 +18,16 @@ export const Services = () => {
           </div>
           {uiServicesData.map(({ services }, index) => {
             return (
-              <ul key={index} className="services-list">
+              <ul
+                key={index}
+                className="services-list"
+              >
                 <li>
                   <BiCheckDouble className="services-list-icon" />
                   <p>{services}</p>
                 </li>
               </ul>
-            );
+            )
           })}
         </article>
 
@@ -34,13 +37,16 @@ export const Services = () => {
           </div>
           {webServicesData.map(({ services }, index) => {
             return (
-              <ul key={index} className="services-list">
+              <ul
+                key={index}
+                className="services-list"
+              >
                 <li>
                   <BiCheckDouble className="services-list-icon" />
                   <p>{services}</p>
                 </li>
               </ul>
-            );
+            )
           })}
         </article>
 
@@ -50,16 +56,19 @@ export const Services = () => {
           </div>
           {softSkillsData.map(({ services }, index) => {
             return (
-              <ul key={index} className="services-list">
+              <ul
+                key={index}
+                className="services-list"
+              >
                 <li>
                   <BiCheckDouble className="services-list-icon" />
                   <p>{services}</p>
                 </li>
               </ul>
-            );
+            )
           })}
         </article>
       </div>
     </section>
-  );
-};
+  )
+}

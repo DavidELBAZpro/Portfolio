@@ -1,7 +1,7 @@
-import iconOfMe from "../assets/imgs/PORTFOLIO-FAVICON 2.png";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import iconOfMe from '../assets/imgs/PORTFOLIO-FAVICON 2.png'
+import { FaAward } from 'react-icons/fa'
+import { FiUsers } from 'react-icons/fi'
+import { VscFolderLibrary } from 'react-icons/vsc'
 
 export const About = () => {
   return (
@@ -12,7 +12,10 @@ export const About = () => {
       <div className="container about-container">
         <div className="about-me">
           <div className="about-me-image">
-            <img src={iconOfMe} alt="David ELBAZ" />
+            <img
+              src={iconOfMe}
+              alt="David ELBAZ"
+            />
           </div>
         </div>
         <div className="about-content">
@@ -36,7 +39,7 @@ export const About = () => {
           <p>
             A <strong>highly motivated team player</strong> , hard worker,
             focusing on problem solving and detailed orientation, self-learner,
-            responsible, with leadership skills and{" "}
+            responsible, with leadership skills and{' '}
             <span className="underlined">
               adapting quickly to new environments.
             </span>
@@ -44,11 +47,14 @@ export const About = () => {
             <span className="collaborate">Let's collaborate !</span>
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          <a
+            href="#contact"
+            className="btn btn-primary"
+          >
             Contact Me
           </a>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

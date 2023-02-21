@@ -33,6 +33,24 @@
   margin-bottom: 1rem;
 }
 
+.btn-modal-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1.5rem 0;
+}
+.modal-image {
+  border-radius: 0.5rem;
+}
+
+.mtz-download-btn {
+  display: none;
+}
+
 // MEDIA QUERIES
 
 @media (max-width: $break-lg) {

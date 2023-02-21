@@ -9,28 +9,30 @@ export const testimonialsData = [
         avatarImg: Gad,
         name: "Gad Bouskila",
         company: "CEO at PSM Consulting - Paris",
-        review: "\"David a parfaitement réalisé la mission confiée. \b Très a l'écoute, il a rapidement compris nos besoins et nos contraintes auxquels il a su aisément s'adapter. \b  Il a été d'un grand professionnalisme et a été force de propositions.\""
+        review: "\" David a parfaitement réalisé la mission confiée. \
+        Très a l'écoute, il a rapidement compris nos besoins et nos contraintes \
+        auxquels il a su aisément s'adapter.  Il a été d'un grand professionnalisme et a été force de propositions. \" "
     },
     {
         avatarImg: Yaron,
         name: "Yaron Biton",
         company: "Chief of Technology at MisterBIT - Tel Aviv",
-        review: "A great team-worker , focused on each and every demands of the client. \b I would highly recommend his services !"
+        review: "\" A great team-worker , focused on each and every demands of the client. I would highly recommend his services ! \""
     },
     {
         avatarImg: Yehouda,
         name: "Yehouda Bouskila",
         company: "Full Stack & DevOps at TotalEnergies - Paris",
-        review: "\"Avec David, nous échangeons régulièrement sur nos projets respectifs.\b\
-       \b Je connais bien la façon de travailler de David\. \b C\'est un excellent développeur Full Stack, sur les technologies Javascript ( React / Node Js).\
+        review: "\" Avec David, nous échangeons régulièrement sur nos projets respectifs.\b\
+       Je connais bien la façon de travailler de David\. C\'est un excellent développeur Full Stack, sur les technologies Javascript ( React / Node Js).\
         De plus il maitrise l\'ensemble des compétences requises pour mener à bien des projets informatiques\
-        (Bases de données, Design, Sass, méthode Agile ... ).\""
+        (Bases de données, Design, Sass, méthode Agile ... ).\" "
 
     },
     {
         avatarImg: Keren,
         name: "Keren Shenkar",
         company: "Project Manager at PAN - Tel Aviv",
-        review: "Even though I had the opportunity to work with David just for a few weeks, I was thrilled to have him on this project. \b It would be a great pleasure to work with you again"
+        review: "\" Even though I had the opportunity to work with David just for a few weeks, I was thrilled to have him on this project. It would be a great pleasure to work with you again \""
     }
 ]

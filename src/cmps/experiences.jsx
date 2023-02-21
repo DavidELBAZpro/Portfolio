@@ -1,5 +1,4 @@
-// import { Icon } from "react-3d-icons";
-import { frontData, backData } from "../data/experiences.data";
+import { frontData, backData } from '../data/experiences.data'
 
 export const Experiences = () => {
   return (
@@ -13,16 +12,27 @@ export const Experiences = () => {
           <div className="experience-content">
             {frontData.map(({ id, Img, color, title }) => {
               return (
-                <article className="experience-details" key={id}>
+                <article
+                  className="experience-details"
+                  key={id}
+                >
                   <div
-                    style={{ height: "100px", width: "100px" }}
+                    style={{ height: '100px', width: '100px' }}
                     className="experience-logo-title"
                   >
-                    <Img color={color} fontSize="4em" />
-                    <h4 className="logo-title" style={{ color:  color  }}>{title}</h4>
+                    <Img
+                      color={color}
+                      fontSize="4em"
+                    />
+                    <h4
+                      className="logo-title"
+                      style={{ color: color }}
+                    >
+                      {title}
+                    </h4>
                   </div>
                 </article>
-              );
+              )
             })}
           </div>
         </div>
@@ -32,22 +42,31 @@ export const Experiences = () => {
           <div className="experience-content">
             {backData.map(({ id, Img, color, title }) => {
               return (
-                <article className="experience-details" key={id}>
+                <article
+                  className="experience-details"
+                  key={id}
+                >
                   <div
                     className="experience-logo-title"
-                    style={{ height: "100px", width: "100px" }}
+                    style={{ height: '100px', width: '100px' }}
                   >
-                    <Img color={color} fontSize="4em" />
-                    <h4 className="logo-title" style={{ color:  color  }}>
+                    <Img
+                      color={color}
+                      fontSize="4em"
+                    />
+                    <h4
+                      className="logo-title"
+                      style={{ color: color }}
+                    >
                       {title}
                     </h4>
                   </div>
                 </article>
-              );
+              )
             })}
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
