@@ -1,14 +1,17 @@
+import React, { useRef } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
-import React, { useRef } from 'react'
 import emailjs from 'emailjs-com'
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import { useSnackbar } from 'notistack'
 
 export const ContactForm = () => {
   const form = useRef()
-  const MySwal = withReactContent(Swal)
+  const { enqueueSnackbar } = useSnackbar()
+
+  const handleClickVariant = (variant) => () => {
+    enqueueSnackbar('Message sended !', { variant })
+  }
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -19,11 +22,6 @@ export const ContactForm = () => {
       form.current,
       'KuzXB_B30hkDqsuaE'
     )
-    MySwal.fire({
-      icon: 'success',
-      title: <i>Message sended !</i>,
-      html: <i>I will get back to you soon</i>,
-    })
     e.target.reset()
   }
 
@@ -88,6 +86,7 @@ export const ContactForm = () => {
             variant="contained"
             size="large"
             type="submit"
+            onClick={handleClickVariant('success')}
           >
             SEND
           </Button>

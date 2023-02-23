@@ -7,19 +7,22 @@ import { Testimonials } from './cmps/testimonials'
 import { Contact } from './cmps/contact'
 import { Footer } from './cmps/footer'
 import { About } from './cmps/about'
+import { SnackbarProvider } from 'notistack'
 
 export function App() {
   return (
     <div className="App">
-      <Header />
-      <Navbar />
-      <About />
-      <Experiences />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
+      <SnackbarProvider maxSnack={3}>
+        <Header />
+        <Navbar />
+        <About />
+        <Experiences />
+        <Services />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </SnackbarProvider>
     </div>
   )
 }
