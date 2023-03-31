@@ -2,12 +2,15 @@ import { CTA } from './DynamicCmps/cta'
 import { HeaderAndFooterSocials } from './DynamicCmps/header-footer-socials'
 import imageOfMe from '../../src/assets/imgs/me.png'
 import Typewriter from 'typewriter-effect'
+import { Fade } from 'react-reveal'
 
 export const Header = () => {
   return (
     <header id="header">
       <div className="container header-container">
-        <h1>David ELBAZ</h1>
+        <Fade left big cascade delay={700}>
+          <h1>David ELBAZ</h1>
+        </Fade>
         <h5 className="text-light typewritter">
           <Typewriter
             onInit={(typewriter) =>
@@ -37,10 +40,7 @@ export const Header = () => {
           />
         </div>
 
-        <a
-          href="#portfolio"
-          className="scroll-down"
-        >
+        <a href="#portfolio" className="scroll-down">
           Scroll Down
         </a>
       </div>

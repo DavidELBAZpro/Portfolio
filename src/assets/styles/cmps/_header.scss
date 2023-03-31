@@ -2,12 +2,12 @@ header {
   height: 100vh;
   padding-top: 2rem;
   overflow: hidden;
-  animation: fade-in 4.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 }
 
 .typewritter {
   color: $clr-primary;
-  font-weight:600 ;
+  font-weight: 600;
 }
 
 .header-container {
@@ -16,7 +16,7 @@ header {
   position: relative;
 
   h1 {
-    font-family: "Archivo", sans-serif;
+    font-family: 'Archivo', sans-serif;
     animation: neon 1s infinite;
     letter-spacing: 0.05rem;
     transition: $main-transition;
@@ -65,7 +65,7 @@ header {
   }
 
   .header-socials::after {
-    content: "";
+    content: '';
     width: 1px;
     height: 2rem;
     background: $clr-primary;
